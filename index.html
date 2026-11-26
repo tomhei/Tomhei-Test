@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tomhei-Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Tomhei-Test</h1>
+    <p>Meine erste einfache HTML-Seite</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Willkommen</h2>
+      <p>Das ist ein kleines Testprojekt. Hier kannst du später eigene Inhalte einfügen.</p>
+    </section>
+
+    <section>
+      <h2>Klick-Test</h2>
+      <button id="btn">Klick mich</button>
+      <p id="out">Noch nicht geklickt.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Tomhei</p>
+  </footer>
+
+  <script>
+    let n = 0;
+    document.getElementById('btn').addEventListener('click', () => {
+      n++;
+      document.getElementById('out').textContent = 'Geklickt: ' + n + 'x';
+    });
+  </script>
+</body>
+</html>
